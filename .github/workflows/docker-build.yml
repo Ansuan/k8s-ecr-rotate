@@ -22,4 +22,4 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/aws-kubectl:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/aws-kubectl:${GITHUB_SHA}
+            ${{ secrets.DOCKERHUB_USERNAME }}/aws-kubectl:${GITHUB_CONTEXT}
